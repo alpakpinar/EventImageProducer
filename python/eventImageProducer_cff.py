@@ -1,6 +1,8 @@
 import FWCore.ParameterSet.Config as cms
 import FWCore.ParameterSet.VarParsing as VarParsing
 
+from helpers import short_name
+
 # Create a new CMS process
 process = cms.Process("EventImageProducer")
 
@@ -28,7 +30,8 @@ process.eventImageProducer = cms.EDProducer("EventImageProducer",
                                     pfCands=cms.InputTag("packedPFCandidates"),
                                 )
 
-outfile = 'test.root'
+outfile = '{}.root'.format( short_name(inputFiles[0]) )
+
 process.TFileService = cms.Service("TFileService",
                                    fileName=cms.string(outfile) )
 
