@@ -5,7 +5,7 @@ import FWCore.ParameterSet.VarParsing as VarParsing
 process = cms.Process("EventImageProducer")
 
 inputFiles = [
-    'root://cmsxrootd.fnal.gov//store/mc/RunIISummer19UL18MiniAOD/GluGluToBulkGravitonToHHTo4B_M-1000_narrow_WZHtag_TuneCP5_PSWeights_13TeV-madgraph-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v11_L1v1-v1/20000/86AAB896-106A-4D4E-9657-DDB87FAFD1EE.root'
+    'root://cmsxrootd.fnal.gov//store/mc/RunIISummer20UL17MiniAOD/VBF_HToInvisible_M125_TuneCP5_withDipoleRecoil_13TeV_powheg_pythia8/MINIAODSIM/106X_mc2017_realistic_v6-v1/00000/7315ADC9-D859-AB48-85F0-052CF3B25769.root'
 ]
 
 # Command line arguments
